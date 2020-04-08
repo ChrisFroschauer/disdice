@@ -1,5 +1,5 @@
+import 'package:dis_dice/pages/home_page/StartScreen.dart';
 import 'package:flutter/material.dart';
-import 'package:dis_dice/dice_page/dice_page.dart';
 
 void main() => runApp(DisDice());
 
@@ -16,10 +16,7 @@ class DisDice extends StatelessWidget {
         accentColor: Colors.white,
 
       ),
-      home: DicePage(
-        title: 'Dice Page',
-        myName: "My Name",
-      ),
+      home: StartScreen()
     );
   }
 }
