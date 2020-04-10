@@ -12,7 +12,7 @@ class DisDice extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primaryColor: Colors.blueGrey,
+        primaryColor: Colors.blue,
         accentColor: Colors.white,
 
       ),

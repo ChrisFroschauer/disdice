@@ -6,6 +6,7 @@ class StartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final nameField = TextField(
       obscureText: false,
+      controller: TextEditingController(),
       decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
           hintText: "Your Display Name",
@@ -17,14 +18,19 @@ class StartScreen extends StatelessWidget {
       onPressed: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => DicePage(title: "Dice Page", myName: "Till",)),
+          MaterialPageRoute(builder: (context) => DicePage(title: "Dice Page", myName: nameField.controller.text,)),
         );
       },
       child: const Text('Join Room', style: TextStyle(fontSize: 20)),
     );
 
     final createRoomBtn = RaisedButton(
-      onPressed: () {},
+      onPressed:  () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => DicePage(title: "Dice Page", myName: nameField.controller.text,)),
+        );
+      },
       child: const Text('Create Room', style: TextStyle(fontSize: 20)),
     );
 
