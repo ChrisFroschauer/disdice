@@ -13,7 +13,8 @@ class DisDice extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primaryColor: Colors.blue,
-        accentColor: Colors.white,
+        accentColor: Colors.blueAccent,
+        backgroundColor: Colors.white,
 
       ),
       home: StartScreen()

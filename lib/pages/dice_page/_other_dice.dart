@@ -26,45 +26,55 @@ class _OtherDiceState extends State<OtherDice> {
         // TODO: Placeholders, generate/delete them as player enter/leave
         Material(
             shape: RoundedRectangleBorder(
-              borderRadius: new BorderRadius.circular(BORDER_RADIUS),
-            ),
-            color: Theme.of(context).primaryColor,
+                borderRadius: new BorderRadius.circular(BORDER_RADIUS),
+                side: BorderSide(
+                    color: Theme.of(context).primaryColor,
+                    width: BORDER_WIDTH)),
+            color: Theme.of(context).backgroundColor,
             child: Container(
               padding: const EdgeInsets.all(PADDING_SMALL),
               child: const Text('Player 1'),
             )),
         Material(
             shape: RoundedRectangleBorder(
-              borderRadius: new BorderRadius.circular(BORDER_RADIUS),
-            ),
-            color: Theme.of(context).primaryColor,
+                borderRadius: new BorderRadius.circular(BORDER_RADIUS),
+                side: BorderSide(
+                    color: Theme.of(context).primaryColor,
+                    width: BORDER_WIDTH)),
+            color: Theme.of(context).backgroundColor,
             child: Container(
               padding: const EdgeInsets.all(PADDING_SMALL),
               child: const Text('Player 2'),
             )),
         Material(
             shape: RoundedRectangleBorder(
-              borderRadius: new BorderRadius.circular(BORDER_RADIUS),
-            ),
-            color: Theme.of(context).primaryColor,
+                borderRadius: new BorderRadius.circular(BORDER_RADIUS),
+                side: BorderSide(
+                    color: Theme.of(context).primaryColor,
+                    width: BORDER_WIDTH)),
+            color: Theme.of(context).backgroundColor,
             child: Container(
               padding: const EdgeInsets.all(PADDING_SMALL),
               child: const Text('Player 3'),
             )),
         Material(
             shape: RoundedRectangleBorder(
-              borderRadius: new BorderRadius.circular(BORDER_RADIUS),
-            ),
-            color: Theme.of(context).primaryColor,
+                borderRadius: new BorderRadius.circular(BORDER_RADIUS),
+                side: BorderSide(
+                    color: Theme.of(context).primaryColor,
+                    width: BORDER_WIDTH)),
+            color: Theme.of(context).backgroundColor,
             child: Container(
               padding: const EdgeInsets.all(PADDING_SMALL),
               child: const Text('Gimli'),
             )),
         Material(
             shape: RoundedRectangleBorder(
-              borderRadius: new BorderRadius.circular(BORDER_RADIUS),
-            ),
-            color: Theme.of(context).primaryColor,
+                borderRadius: new BorderRadius.circular(BORDER_RADIUS),
+                side: BorderSide(
+                    color: Theme.of(context).primaryColor,
+                    width: BORDER_WIDTH)),
+            color: Theme.of(context).backgroundColor,
             child: Container(
               padding: const EdgeInsets.all(PADDING_SMALL),
               child: const Text('Pippin'),

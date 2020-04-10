@@ -32,9 +32,13 @@ class _MyDiceState extends State<MyDice> {
   @override
   Widget build(BuildContext context) {
     return new Material(
-        color: Theme.of(context).primaryColor,
+        color: Theme.of(context).backgroundColor,
         shape: RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(BORDER_RADIUS),
+          side: BorderSide(
+            color: Theme.of(context).primaryColor, 
+            width: BORDER_WIDTH
+            )
         ),
         child: InkWell(
             onTap: () => _throwDice(), // handle your onTap here

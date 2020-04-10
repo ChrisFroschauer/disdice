@@ -18,9 +18,9 @@ class _DicePageState extends State<DicePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      /*appBar: AppBar(
         title: Text(widget.title),
-      ),
+      ),*/
       body: new Column(
         //crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisSize: MainAxisSize.max,
@@ -28,17 +28,17 @@ class _DicePageState extends State<DicePage> {
           Flexible(
               flex: 1,
               child: new Container(
-                color: Theme.of(context).accentColor,
+                color: Theme.of(context).backgroundColor,
                 padding: const EdgeInsets.all(PADDING_BIG), 
                 child: new OtherDice())),
-          new Divider(
+          /*new Divider(
             color: Theme.of(context).primaryColor,
-            thickness: 1.0,
-            height: 1.0,),
+            thickness: 2.0,
+            height: 2.0,),*/
           Flexible(
               flex: 1,
               child: Container(
-                  color: Theme.of(context).accentColor, 
+                  color: Theme.of(context).backgroundColor, 
                   padding: const EdgeInsets.all(PADDING_BIG),
                   child: new MyDice(name: widget.myName)))
         ],
